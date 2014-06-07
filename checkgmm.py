@@ -20,8 +20,7 @@ def make_ellipses(gmm, ax):
 np.random.seed(1)
 g = largegmm(n_components=3, covariance_type='full')
 
-# Generate observations with 2 modes.
-# Centered on 0 (100 points) and on 10 (300 points).
+# Generate observations.
 data = np.concatenate((np.random.randn(1000, 2),
                        np.array([3,2]) + np.random.randn(2000, 2),
                        np.array([8,9]) + np.random.randn(4000, 2)))
